@@ -2,10 +2,33 @@
 <html>
   <head>
     <title>Title of the document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
     <script src="./index-js.js"></script>
-    <button onclick="main(5, '1,2,3,4,5', '(1,1),(2,2),(3,3),(4,4),(5,5)')" type="submit">Matriz</button>
-
+    <div class="container">
+    <section class="header">
+        <h1>Proyecto Final</h1>
+        <h2>Matematicas Discretas</h2>
+        <p>Por favor ingrese el tamaño de la matriz</p>
+        <p>Ejemplo: 2x2</p>
+        <input class="input" type="text" placeholder="Ingrese matriz">
+        <button class="myButton" onclick="main(5, '1,2,3,4,5', '(1,1),(2,2),(3,3),(4,4),(5,5)')" type="submit">Generar Matriz</button>  
+    </section>    
+    
+   <div class="resultado">
+   </div>
+    <footer>
+      <Div class="footer">
+        <p>Presentado por:</p>
+        <p class="nombres">Angelica Yulieth Castro Ibarra</p> 
+        <p class="nombres">Jhon Nicolas González Vallejo</p>
+        <p class="nombres">Yeyson Hernando Sánchez Ospina</p>
+        <p class="nombres">Cristian David Ovalle Parra</p>
+      </Div>
+    </div>
+    </footer>
   </body>
 </html>
