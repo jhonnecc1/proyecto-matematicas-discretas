@@ -1,0 +1,153 @@
+body{
+    background: linear-gradient(#174276, #0167cf);
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.header{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__img {
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.header h1, h2{
+    padding: 1px;
+    margin: 0;
+}
+
+.header p{
+    padding: 1px;
+    margin: 10px 0;
+}
+
+.button{
+    background-color: rgba(255,255, 255, 0.1);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+
+.input{
+    background-color: transparent;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 2px solid white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+
+.footer
+{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.nombres
+{
+    margin: 10px 20px;
+}
+
+.resultado{
+  width: 100%;
+}
+
+.resultadoPropiedades{
+  width: 100%;
+  height: 200px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.inputTamano{
+  background-color: transparent;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 2px solid white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+  outline: none;
+  height: 50px;
+  width: 20%;
+}
+
+.inputG{
+  background-color: transparent;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 2px solid white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0px 20px;
+  outline: none;
+  height: 50px;
+}
+
+.inputRelacion{
+  background-color: transparent;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 2px solid white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+  outline: none;
+  height: 50px;
+}

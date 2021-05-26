@@ -2,10 +2,66 @@
 <html>
   <head>
     <title>Title of the document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
     <script src="./index-js.js"></script>
-    <button onclick="main(5, '1,2,3,4,5', '(1,1),(2,2),(3,3),(4,4),(5,5)')" type="submit">Matriz</button>
 
+    <header class="header">
+      <img class="header__img" src="https://posgradosvirtuales.ecci.edu.co/pluginfile.php/1/theme_adaptable/adaptablemarketingimages/0/logo_ecci.png" alt="logo">
+    </header>
+    <section class="login">
+      <h1>Proyecto Final</h1>
+      <h2>Matematicas Discretas</h2>
+      <p>Por favor ingrese el tamaño de la matriz</p>
+      <p>Ejemplo: 2x2</p>
+      <div style="margin-bottom: 10px;">
+        <label>Formato de ingreso de la matriz</label>
+      </div>
+      <div class="row" style="width: 25%;">
+        <div class="column">
+          <input type="radio" id="manual" name="gender" value="manual" onchange="handleChangeM();">
+          <label for="manual">Manual</label><br>
+        </div>
+        <div class="column">
+          <input type="radio" id="automatico" name="gender" value="automatico" onchange="handleChangeA();">
+          <label for="automatico">Automatico</label>
+        </div>
+      </div>
+      <div class="row" style="width: 25%;" id="camposManuales" hidden>
+        <!-- <input class="inputTamano" type="number" id="tamanoM" name="tamano" placeholder="Ej:4"><br> -->
+        <input class="inputG" type="text" id="g" name="g" placeholder="Ej: 1,2,3,4"><br>
+        <input class="inputRelacion" type="text" id="relacion" name="relacion" placeholder="Ej: (a1,b1),(a1,b2),(a2,b1)">
+      </div>
+      <div class="row" style="width: 25%;" id="camposAutomaticos" hidden>
+        <input class="inputTamano" type="number" id="tamanoA" name="tamano" placeholder="Ej:4"><br>
+      </div>
+      <button class="button" onclick="main()" type="submit">Generar Matriz</button>
+      <div class="resultado" name="resultado" id="resultado">
+      </div>
+      <div class="resultadoPropiedades"style="width: 100%">
+        <div name="propiedades" id="propiedades" hidden>
+          Propiedades de la matriz:<br>
+        </div>
+        <p style="margin: 5px" id="is_reflexiva" hidden></p>
+        <p style="margin: 5px" id="is_irreflexiva" hidden></p>
+        <p style="margin: 5px" id="is_simetrica" hidden></p>
+        <p style="margin: 5px" id="is_asimetrica" hidden></p>
+        <p style="margin: 5px" id="is_antisimetrica" hidden></p>
+        <p style="margin: 5px" id="is_transitiva" hidden></p>
+        <p style="margin: 5px" id="is_equivalencia" hidden></p>
+        <p style="margin: 5px" id="sin_propiedades" hidden></p>
+      </div>
+      <div class="footer">
+        <p>Presentado por:</p>
+        <p class="nombres">Angelica Yulieth Castro Ibarra</p>
+        <p class="nombres">Jhon Nicolas González Vallejo</p>
+        <p class="nombres">Yeyson Hernando Sánchez Ospina</p>
+        <p class="nombres">Cristian David Ovalle Parra</p>
+      </div>
+      <p> Copyright © 2021 </p>
+    </section>
   </body>
 </html>
